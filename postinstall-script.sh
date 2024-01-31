@@ -20,9 +20,13 @@ else
 	### General Setup ###
 	#####################
 
+	### TODO
 	# # Generate SSH keys
 	# echo "Generating SSH keys"
 	# ssh-keygen -t ed25519
+
+	# Disable screen blank
+	gsettings set org.gnome.desktop.session idle-delay 0
 
 	#################
 	### ZSH + OMZ ###
@@ -38,7 +42,7 @@ else
 	git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
 	rm ~/.zshrc
-	curl -fsSL http://some.url --output ~/.zshrc
+	curl -fsSL https://raw.githubusercontent.com/iskandervdh/ubuntu-config/main/.zshrc -o ~/.zshrc
 
 	apt install -y fonts-powerline
 
