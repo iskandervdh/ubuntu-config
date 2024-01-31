@@ -33,7 +33,7 @@ else
 	#################
 
 	apt install -y zsh
-	chsh -S $(which zsh)
+	chsh -s $(which zsh)
 
 	sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 	rm ~/.zshrc.pre-oh-my-zsh
