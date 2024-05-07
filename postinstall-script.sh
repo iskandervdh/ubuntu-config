@@ -51,7 +51,7 @@ else
 	###############
 
 	echo "Installing nodejs..."
-	curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
+	curl -fsSL https://deb.nodesource.com/setup_22.x | sudo -E bash -
 	apt install -y nodejs
 
 	# Install npm-check-updates and pnpm as global nodejs packages
